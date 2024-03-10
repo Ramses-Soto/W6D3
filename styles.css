@@ -1,0 +1,125 @@
+html, body, h2, p {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e0e0e0;
+    width: 100%;
+}
+
+#comments-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10%;
+}
+
+.post, .comment-form, .comment {
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.post {
+    top: 0;
+    position: fixed;
+    width: 80%;
+    height: 100px;
+}
+
+.post h2{
+    font-weight: 500;
+    margin: 0px 10px;
+}
+
+.post p{
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin: 0px 10px;
+}
+
+.comment-form{
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    width: 80%;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.comment-form > #submit {
+    cursor: pointer;
+    font-size: 18px;
+    margin: 3px;
+}
+
+.comment-form > #username {
+    width: 40%;
+    margin: 3px;
+}
+
+.comment-form > #comment {
+    width: 100%;
+    margin: 3px;
+}
+
+#comments {
+    background-color: lightgrey;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 100%;
+    min-height: 438px;
+}
+
+.comment {
+    margin: 15px;
+    background-color: #e0e0e0;
+    display: flex;
+}
+
+.comment > #icon {
+    font-size: 2em;
+    margin: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.comment-text {
+    font-size: 18px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+
+.delete, .edit {
+    font-size: 10px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+  
+.edit-input {
+    width: 90%;
+}  
+
+.edit-text button{
+    margin-left: 10px;
+    font-size: 1em;
+}
+
+button {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: lightblue;
+}
